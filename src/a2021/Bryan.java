@@ -8,8 +8,9 @@ public class Bryan {
         Scanner f = new Scanner(new File("Data/Input/bryan.dat"));
         //Scanner f = new Scanner(System.in);
 
-        int weeks = f.nextInt();
-        for (int i = 0; i < weeks; i++) {
+        int cases = f.nextInt();
+        while (cases-- > 0) {
+
             int sum = 0;
             int transactions = f.nextInt();
             for (int j = 0; j < transactions; j++) {
@@ -26,6 +27,7 @@ public class Bryan {
             else {
                 System.out.println("Phew, broke even!");
             }
+
         }
 
         f.close();

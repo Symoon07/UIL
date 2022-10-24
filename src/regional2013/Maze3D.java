@@ -4,7 +4,6 @@ import java.util.*;
 import java.io.*;
 
 public class Maze3D {
-
     char[][][] mat;
     int moves;
     int mag;
@@ -41,14 +40,12 @@ public class Maze3D {
             int[] vr = {-1, 1, 0, 0, 0, 0};
             int[] vc = {0, 0, -1, 1, 0, 0};
             int[] vf = {0, 0, 0, 0, -1, 1};
-
             Queue<Integer> q = new LinkedList<>();
             q.add(sf);
             q.add(sr);
             q.add(sc);
             q.add(0);
             q.add(mag);
-
             while (!q.isEmpty()) {
                 int fl = q.poll();
                 int r = q.poll();
@@ -70,7 +67,6 @@ public class Maze3D {
                     int ff = fl + vf[i];
                     int rr = r + vr[i];
                     int cc = c + vc[i];
-
                     q.add(ff);
                     q.add(rr);
                     q.add(cc);
@@ -80,6 +76,7 @@ public class Maze3D {
                 mat[fl][r][c] = '#';
 
             }
+
             System.out.println(moves != -1 ? moves + " MOVES" : "STUCK");
 
         }

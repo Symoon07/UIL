@@ -24,7 +24,6 @@ public class Kirill {
 
     public boolean isSelfNumber (int num) {
         for (int i = 0; i <= num; i++) {
-
             int temp = i;
             int sum = temp;
             while (temp != 0) {

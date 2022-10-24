@@ -15,7 +15,6 @@ public class Deepa {
             int income = f.nextInt();
             int[] val = new int[brackets];
             int[] per = new int[brackets];
-
             for (int j = 0; j < brackets; j++) {
                 val[j] = f.nextInt();
                 per[j] = f.nextInt();
@@ -30,6 +29,7 @@ public class Deepa {
                 remain -= subtracted;
             }
             tax += remain * per[brackets- 1];
+
             System.out.printf("Case #%d: $%,.2f %.3f%%%n", i+1, tax / 100, tax / income);
 
         }

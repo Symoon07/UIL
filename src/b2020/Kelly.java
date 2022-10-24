@@ -12,7 +12,6 @@ public class Kelly {
 
             String[] in = f.nextLine().split(" ");
             String out = "";
-
             for (int i = 0; i < in.length; i+=2) {
                 int one = Integer.parseInt(in[i]);
                 int two = Integer.parseInt(in[i+1]);
@@ -27,6 +26,7 @@ public class Kelly {
                     out += Character.toString(assci);
                 }
             }
+
             System.out.println(out);
 
         }

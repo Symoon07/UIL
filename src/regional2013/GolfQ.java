@@ -4,7 +4,6 @@ import java.util.*;
 import java.io.*;
 
 public class GolfQ {
-
     static class Golfer implements Comparable<Golfer>{
         public int score;
         public String name;
@@ -22,7 +21,6 @@ public class GolfQ {
         public String toString() {
             return name + " " + score;
         }
-
     }
 
     public void run() throws Exception {

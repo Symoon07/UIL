@@ -28,6 +28,7 @@ public class Megan {
                     continue cases;
                 }
             }
+
             System.out.printf("Word List %d is sorted.%n", i);
 
         }

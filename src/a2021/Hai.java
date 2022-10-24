@@ -14,7 +14,6 @@ public class Hai {
 
             String expression = f.next();
             ArrayList<String> list = new ArrayList<>();
-
             for (String s : arr) {
                 if (s.matches(expression)) {
                     list.add(s);

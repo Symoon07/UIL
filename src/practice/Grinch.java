@@ -4,7 +4,6 @@ import java.io.*;
 import java.util.*;
 
 public class Grinch {
-
     char[][] mat;
     int[][] shadow;
     int time;
@@ -38,7 +37,6 @@ public class Grinch {
             found = 0;
             int[] vr = {-1, 1, 0, 0};
             int[] vc = {0, 0, -1, 1};
-
             for (int i = 0; i < t; i++) {
 
                 Queue<Integer> q = new LinkedList<>();
@@ -46,7 +44,6 @@ public class Grinch {
                 q.add(sr);
                 q.add(sc);
                 q.add(0);
-
                 while (!q.isEmpty()) {
                     int r = q.poll();
                     int c = q.poll();
@@ -68,7 +65,6 @@ public class Grinch {
                     for (int j = 0; j < 4; j++) {
                         int nr = r + vr[j];
                         int nc = c + vc[j];
-
                         q.add(nr);
                         q.add(nc);
                         q.add(steps + 1);

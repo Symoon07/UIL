@@ -4,29 +4,24 @@ import java.util.*;
 import java.io.*;
 
 public class Irene {
-
     public boolean prime(int num) {
-
         for (int i = 2; i <= Math.sqrt(num); i++) {
             if (num % i == 0) return false;
         }
-        return true;
 
+        return true;
     }
 
     public boolean semiPrime (int num) {
-
         for (int i = 2; i <= Math.sqrt(num); i++) {
             if (prime(i) && num % i == 0 && prime(num / i)) return true;
         }
-        return false;
 
+        return false;
     }
 
     public boolean disc (int num) {
-
         return semiPrime(num) && Math.pow((int) Math.sqrt(num), 2) != num;
-
     }
 
     public void run() throws Exception {

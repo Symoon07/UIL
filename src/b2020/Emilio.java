@@ -26,6 +26,7 @@ public class Emilio {
             for (int j = list.size()-1; j >= list.size()-10; j--) {
                 avgMax += list.get(j);
             }
+
             System.out.printf("%d: %.1f%n", i+1, avgMax/10);
             System.out.printf("%d: %.1f%n------%n", i+1, avgMin/10);
 

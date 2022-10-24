@@ -10,7 +10,7 @@ public class Oscar {
 
         int cases = f.nextInt();
         f.nextLine();
-        for (int i = 0; i < cases; i++) {
+        while (cases-- > 0 ) {
 
             String[] in = f.nextLine().split(" ");
             int cur = 0;
@@ -20,6 +20,7 @@ public class Oscar {
                     cur = Integer.parseInt(in[j]);
                 }
             }
+
             System.out.println();
 
         }

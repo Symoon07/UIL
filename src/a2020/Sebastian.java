@@ -4,9 +4,7 @@ import java.util.*;
 import java.io.*;
 
 public class Sebastian {
-
     class Word implements Comparable<Word> {
-
         public String word;
 
         public Word(String word) {
@@ -17,17 +15,15 @@ public class Sebastian {
         public int compareTo(Word o) {
             return ascii(this.word) - ascii(o.word);
         }
-
     }
 
     public int ascii(String str) {
-
         int sum = 0;
         for (int i = 0; i < str.length(); i++) {
             sum += str.charAt(i);
         }
-        return sum;
 
+        return sum;
     }
 
     public void run() throws Exception {
@@ -38,6 +34,7 @@ public class Sebastian {
         while (f.hasNext()) {
             set.add(new Word(f.next()));
         }
+
         for (Word word : set) {
             System.out.println(word.word);
         }

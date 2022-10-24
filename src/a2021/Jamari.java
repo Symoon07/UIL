@@ -11,9 +11,9 @@ public class Jamari {
         int numSold = 0;
         ArrayList<String> customers = new ArrayList<>();
         while (f.hasNext()) {
-            String i = f.next();
-            if (i.equals(">>>")) {
 
+            String in = f.next();
+            if (in.equals(">>>")) {
                 if (numSold == 0) {
                     System.out.println("No one got a donut today.");
                 }
@@ -24,19 +24,19 @@ public class Jamari {
                     System.out.println("The last person to get a donut was " + customers.get(numSold - 1));
                     System.out.println(customers.size()-numSold + " customers did not get a donut today.");
                 }
-
                 customers.clear();
                 numSold = 0;
             }
 
             else {
                 try {
-                    numSold += Integer.parseInt(i, 10);
+                    numSold += Integer.parseInt(in, 10);
                 }
                 catch (Exception e) {
-                    customers.add(i);
+                    customers.add(in);
                 }
             }
+
         }
 
         f.close();

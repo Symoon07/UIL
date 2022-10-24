@@ -14,6 +14,7 @@ public class Aran {
                 System.out.print(cap++);
                 System.out.print(low++);
             }
+
             System.out.println();
 
         }
