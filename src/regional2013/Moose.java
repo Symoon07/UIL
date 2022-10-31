@@ -8,16 +8,16 @@ public class Moose {
     int maxSize;
 
     public int recur(int r, int c) {
-
         if (r < 0 || r >= mat.length || c < 0 || c >= mat[r].length || mat[r][c] != 'M') return 0;
+
         mat[r][c] = '.';
         int size = 1;
         size += recur(r+1, c);
         size += recur(r-1, c);
         size += recur(r, c+1);
         size += recur(r, c-1);
-        return size;
 
+        return size;
     }
     public void run() throws Exception {
         Scanner f = new Scanner(new File("Data/Input/moose.dat"));
@@ -39,6 +39,7 @@ public class Moose {
                     }
                 }
             }
+
             System.out.println(maxSize);
 
         }

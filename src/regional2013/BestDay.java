@@ -9,18 +9,19 @@ public class BestDay {
         //Scanner f = new Scanner(System.in);
 
         int cases = f.nextInt();
-        for (int i = 0; i < cases; i++) {
+        while (cases-- > 0) {
 
             int[] sales = new int[7];
             int day = -1;
             int max = 0;
-            for (int j = 0; j < sales.length; j++) {
-                sales[j] = f.nextInt();
-                if (sales[j] > max) {
-                    max = sales[j];
-                    day = j;
+            for (int i = 0; i < sales.length; i++) {
+                sales[i] = f.nextInt();
+                if (sales[i] > max) {
+                    max = sales[i];
+                    day = i;
                 }
             }
+
             String[] days = "SUNDAY MONDAY TUESDAY WEDNESDAY THURSDAY FRIDAY SATURDAY".split(" ");
             System.out.println(days[day]);
 

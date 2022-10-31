@@ -16,6 +16,7 @@ public class Cooking {
                 char c = in.charAt(i);
                 time += c;
             }
+
             System.out.printf("%dmin, %dsec%n", time/60, time%60);
 
         }

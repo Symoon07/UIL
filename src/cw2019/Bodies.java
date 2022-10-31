@@ -4,10 +4,9 @@ import java.util.*;
 import java.io.*;
 
 public class Bodies {
-    
     char[][] mat;
     boolean found;
-    
+
     public void run() throws Exception {
         Scanner f = new Scanner(new File("Data/Input/bodies.dat"));
         //Scanner f = new Scanner(System.in);
@@ -47,11 +46,9 @@ public class Bodies {
             found = false;
             int[] vr = {-1, 1, 0, 0};
             int[] vc = {0, 0, -1, 1};
-
             Queue<Integer> q = new LinkedList<>();
             q.add(sr);
             q.add(sc);
-
             while (!q.isEmpty()) {
                 int r = q.poll();
                 int c = q.poll();
@@ -65,12 +62,12 @@ public class Bodies {
                 for (int i = 0; i < 4; i++) {
                     int rr = r + vr[i];
                     int cc = c + vc[i];
-
                     q.add(rr);
                     q.add(cc);
                 }
                 mat[r][c] = '#';
             }
+
             System.out.println(found ? "Bravo Six Going Dark... at the end of the tunnel is a light." : "Bravo Six Going Dark... Mission Failed. We'll get em next time");
             
         }

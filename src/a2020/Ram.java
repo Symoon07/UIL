@@ -4,14 +4,13 @@ import java.util.*;
 import java.io.*;
 
 public class Ram {
-
-    public String reverse(String s) {
-
+    public String reverse(String word) {
         String out = "";
-        for (int i = s.length()-1; i >= 0; i--)
-            out += s.charAt(i);
-        return out;
 
+        for (int i = word.length()-1; i >= 0; i--)
+            out += word.charAt(i);
+
+        return out;
     }
 
     public void run() throws Exception {
@@ -23,6 +22,7 @@ public class Ram {
             in += f.nextLine();
             in += " ";
         }
+
         String[] inArr = in.split(" ");
         String out = "";
         for (String s : inArr) {
@@ -45,6 +45,7 @@ public class Ram {
                 out += reverse(s) + " ";
             }
         }
+
         System.out.println(out);
 
         f.close();

@@ -4,12 +4,10 @@ import java.io.*;
 import java.util.*;
 
 public class Maze_Lab1 {
-
     char[][] mat;
     boolean found;
 
     public void recur(int r, int c) {
-
         if (r < mat.length && r >= 0 && c < mat[r].length && c >= 0 && mat[r][c] != '0') {
 
             if (mat[r][c] == 'E') {
@@ -22,6 +20,7 @@ public class Maze_Lab1 {
             recur(r + 1, c);
             recur(r, c - 1);
             recur(r, c + 1);
+
         }
     }
 

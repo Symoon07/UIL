@@ -24,6 +24,7 @@ public class Zombies {
                     out += in.charAt(i);
                 }
             }
+
             System.out.println(out);
 
         }

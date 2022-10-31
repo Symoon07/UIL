@@ -4,7 +4,6 @@ import java.util.*;
 import java.io.*;
 
 public class Eagles {
-
     char[][] mat;
     int moves;
 
@@ -27,12 +26,10 @@ public class Eagles {
             moves = 0;
             int[] vr = {-1, 1, 0, 0, -1, -1, 1, 1};
             int[] vc = {0, 0, -1, 1, -1, 1, -1, 1};
-
             Queue<Integer> q = new LinkedList<>();
             q.add(sr);
             q.add(sc);
             q.add(0);
-
             while (!q.isEmpty()) {
                 int r = q.poll();
                 int c = q.poll();
@@ -47,13 +44,13 @@ public class Eagles {
                 for (int i = 0; i < 8; i++) {
                     int rr = r + vr[i];
                     int cc = c + vc[i];
-
                     q.add(rr);
                     q.add(cc);
                     q.add(steps + 1);
                 }
                 mat[r][c] = 'B';
             }
+
             System.out.println(moves);
 
         }

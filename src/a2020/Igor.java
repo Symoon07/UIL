@@ -42,6 +42,7 @@ public class Igor {
                     val += 1;
                 }
             }
+
             System.out.println(val);
 
         }

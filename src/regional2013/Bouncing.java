@@ -10,6 +10,7 @@ public class Bouncing {
 
         int cases = f.nextInt();
         Random r = new Random();
+        String[] colors = {"WHITE", "RED", "BLUE"};
         while (cases-- > 0) {
 
             r.setSeed(f.nextLong());
@@ -30,7 +31,7 @@ public class Bouncing {
                     faces[2] = temp;
                 }
             }
-            String[] colors = {"WHITE", "RED", "BLUE"};
+
             System.out.println(colors[faces[0]]);
 
         }

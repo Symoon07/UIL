@@ -4,17 +4,15 @@ import java.util.*;
 import java.io.*;
 
 public class Naughty {
-
     public double accuracy(String correct, String str) {
-
         int numCorrect = 0;
         for (int i = 0; i < correct.length(); i++) {
             if (correct.charAt(i) == str.charAt(i)) {
                 numCorrect++;
             }
         }
-        return Math.round(numCorrect * 100.0 / correct.length());
 
+        return Math.round(numCorrect * 100.0 / correct.length());
     }
 
     public void run() throws Exception {
@@ -35,6 +33,7 @@ public class Naughty {
                     accuracy = (int)accuracy(correct, strCorrect);
                 }
             }
+
             System.out.println(accuracy != 0 ? strCorrect + "\nAccuracy Percentage : " + accuracy  + "%": "FAILED\nAccuracy Percentage : NaN");
             System.out.println();
 

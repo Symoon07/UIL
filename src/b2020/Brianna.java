@@ -21,6 +21,7 @@ public class Brianna {
             }
 
         }
+
         System.out.printf("%d %d %d", min, max, max - min);
 
         f.close();

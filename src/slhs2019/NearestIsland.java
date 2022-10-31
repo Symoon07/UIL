@@ -13,7 +13,6 @@ public class NearestIsland {
         double close = Integer.MAX_VALUE;
         double[] coord = new double[2];
         while (f.hasNextLine()) {
-
             double x = f.nextDouble();
             double y = f.nextDouble();
             double distance = Math.sqrt(Math.pow(x - sx, 2)) + Math.pow(y - sy, 2);
@@ -21,8 +20,8 @@ public class NearestIsland {
                 close= distance;
                 coord[0] = x; coord[1] = y;
             }
-
         }
+
         System.out.printf(Arrays.toString(coord));
 
         f.close();
