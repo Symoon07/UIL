@@ -65,7 +65,8 @@ public class Block {
                         mat[r][c] = '-';
                     }
                 }
-            }for (int i = 0; i < 5; i++) {
+            }
+            for (int i = 0; i < 5; i++) {
                 if (mat[0][i] == '#') {
                     Queue<Integer> q = new LinkedList<>();
                     int[] evr = {-1, 1, 0, 0, -1, -1};
