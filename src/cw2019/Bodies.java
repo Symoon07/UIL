@@ -8,7 +8,7 @@ public class Bodies {
     boolean found;
 
     public void run() throws Exception {
-        Scanner f = new Scanner(new File("Data/Input/bodies.dat"));
+        Scanner f = new Scanner(new File("Data/cw2019/bodies.dat"));
         //Scanner f = new Scanner(System.in);
 
         int cases = f.nextInt();

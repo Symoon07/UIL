@@ -1,4 +1,4 @@
-package practice;
+package state2013;
 
 import java.util.*;
 import java.io.*;
@@ -8,7 +8,7 @@ public class Eagles {
     int moves;
 
     public void run() throws Exception {
-        Scanner f = new Scanner(new File("Data/Input/eagles.dat"));
+        Scanner f = new Scanner(new File("Data/state2013/eagles.dat"));
         //Scanner f = new Scanner(System.in);
 
         int cases = f.nextInt();

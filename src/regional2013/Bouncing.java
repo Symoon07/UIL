@@ -1,5 +1,7 @@
 package regional2013;
 
+import district2013_1.DiceRoll;
+
 import java.util.*;
 import java.io.*;
 
@@ -40,7 +42,7 @@ public class Bouncing {
     }
 
     public static void main(String[] args) throws Exception {
-        new Bouncing().run();
+        new DiceRoll().run();
     }
 
 }
