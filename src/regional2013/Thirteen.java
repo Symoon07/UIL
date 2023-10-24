@@ -6,8 +6,6 @@ import java.io.*;
 public class Thirteen {
     char[][] mat;
     int out;
-    int[] vr;
-    int[] vc;
 
     public void run() throws Exception {
         Scanner f = new Scanner(new File("Data/regional2013/Thirteen.dat".toLowerCase()));
@@ -17,8 +15,6 @@ public class Thirteen {
         while (n-- > 0) {
             mat = new char[10][10];
             out = Integer.MAX_VALUE;
-            vr = new int[] {-1, 1, 0, 0};
-            vc = new int[] {0, 0, -1, 1};
             for (int i = 0; i < mat.length; i++) {
                 mat[i] = f.next().toCharArray();
             }
@@ -33,6 +29,8 @@ public class Thirteen {
         if (r < 0 || r >= 10 || c < 0 || c >= 10 || mat[r][c] == '#' || s > out) {
             return;
         }
+        int[] vr = {-1, 1, 0, 0};
+        int[] vc = {0, 0, -1, 1};
         if (mat[r][c] == 'E' && j == 13) {
             out = s;
             return;
