@@ -59,6 +59,9 @@ public class Nick {
             for (int i = 0; i < smat.length; i++) {
                 Arrays.fill(smat[i], Integer.MAX_VALUE);
             }
+            for (int i = 0; i < mat.length; i++) {
+                System.out.println(mat[i]);
+            }
             mat[r][c] = '@';
             for (int i = 0; i < 4; i++) {
                 recur(r + vr[i], c + vc[i], 0, cur - d + t);

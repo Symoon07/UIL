@@ -11,8 +11,7 @@ public class Barb {
         while (f.hasNext()) {
 
             String in = f.next();
-            StringBuilder reverse = new StringBuilder(in);
-            reverse.reverse();
+            StringBuilder reverse = new StringBuilder(in).reverse();
             System.out.print(in + " " + new String(reverse).toUpperCase() + " " +
                     new String(reverse).substring(reverse.length()/2) + " " + in.substring(in.length()/2).toUpperCase() +"\n");
 
