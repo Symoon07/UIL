@@ -1,4 +1,4 @@
-package practice;
+package cw2018;
 
 import java.io.*;
 import java.util.*;
@@ -10,7 +10,7 @@ public class Grinch {
     int found;
 
     public void run() throws Exception {
-        Scanner f = new Scanner(new File("Data/practice/grinch.dat"));
+        Scanner f = new Scanner(new File("Data/cw2018/grinch.dat"));
         //Scanner f = new Scanner(System.in);
 
         int cases = f.nextInt();
