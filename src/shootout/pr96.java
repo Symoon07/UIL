@@ -5,7 +5,7 @@ import java.io.*;
 
 public class pr96 {
     public void run() throws Exception {
-        Scanner f = new Scanner(new File("Data/shootout/pr96.dat"));
+        Scanner f = new Scanner(new File("Data/shootout/wormhole.dat"));
         //Scanner f = new Scanner(System.in);
 
         int n = f.nextInt(); f.nextLine();

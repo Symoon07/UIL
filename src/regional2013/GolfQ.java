@@ -24,7 +24,7 @@ public class GolfQ {
     }
 
     public void run() throws Exception {
-        Scanner f = new Scanner(new File("Data/Input/golfq.dat"));
+        Scanner f = new Scanner(new File("Data/regional2013/golfq.dat"));
         //Scanner f = new Scanner(System.in);
 
         ArrayList<Golfer> players = new ArrayList<>();

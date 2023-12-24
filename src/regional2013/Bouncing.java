@@ -7,7 +7,7 @@ import java.io.*;
 
 public class Bouncing {
     public void run() throws Exception {
-        Scanner f = new Scanner(new File("Data/Input/bouncing.dat"));
+        Scanner f = new Scanner(new File("Data/regional2013/bouncing.dat"));
         //Scanner f = new Scanner(System.in);
 
         int cases = f.nextInt();

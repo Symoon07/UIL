@@ -26,7 +26,7 @@ public class Thirteen {
     }
 
     public void recur(int r, int c, int s, int j) {
-        if (r < 0 || r >= 10 || c < 0 || c >= 10 || mat[r][c] == '#' || s > out) {
+        if (r < 0 || r >= 10 || c < 0 || c >= 10 || mat[r][c] == '#' || s >= out) {
             return;
         }
         int[] vr = {-1, 1, 0, 0};
