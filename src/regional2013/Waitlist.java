@@ -5,7 +5,7 @@ import java.io.*;
 
 public class Waitlist {
     public void run() throws Exception {
-        Scanner f = new Scanner(new File("Data/Input/waitlist.dat"));
+        Scanner f = new Scanner(new File("Data/regional2013/waitlist.dat"));
         //Scanner f = new Scanner(System.in);
 
         int events = f.nextInt();

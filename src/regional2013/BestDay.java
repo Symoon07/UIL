@@ -5,7 +5,7 @@ import java.io.*;
 
 public class BestDay {
     public void run() throws Exception {
-        Scanner f = new Scanner(new File("Data/Input/bestday.dat"));
+        Scanner f = new Scanner(new File("Data/regional2013/bestday.dat"));
         //Scanner f = new Scanner(System.in);
 
         int cases = f.nextInt();

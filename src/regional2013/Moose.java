@@ -20,7 +20,7 @@ public class Moose {
         return size;
     }
     public void run() throws Exception {
-        Scanner f = new Scanner(new File("Data/Input/moose.dat"));
+        Scanner f = new Scanner(new File("Data/regional2013/moose.dat"));
         //Scanner f = new Scanner(System.in);
 
         int cases = f.nextInt();
